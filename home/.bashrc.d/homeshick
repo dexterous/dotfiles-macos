@@ -1,0 +1,7 @@
+if which brew 2>&1 >/dev/null; then
+  homeshick_sh="$(brew --prefix homeshick)/homeshick.sh"
+  
+  if [[ -f "${homeshick_sh}" ]]; then
+    source "${homeshick_sh}"
+  fi
+fi

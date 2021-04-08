@@ -23,6 +23,8 @@ brew "macvim"
 brew "awscli"
 
 brew "dive"
+brew "docker-completion"
+brew "docker-compose-completion"
 brew "docker-machine"
 brew "istioctl"
 brew "k9s"
@@ -31,10 +33,12 @@ brew "lazydocker"
 
 brew "git"
 
+brew "gradle"
 brew "groovy"
 brew "openjdk"
 brew "python@3.9"
 brew "ruby"
+brew "rustup"
 brew "shellcheck"
 
 brew "leiningen"

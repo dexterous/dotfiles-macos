@@ -1,3 +1,5 @@
+export HOMESHICK_DIR="/usr/local"
+
 if which brew 2>&1 >/dev/null; then
   homeshick_sh="$(brew --prefix homeshick)/homeshick.sh"
   

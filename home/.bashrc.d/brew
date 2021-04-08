@@ -1,6 +1,7 @@
 bash_completion_d='/usr/local/etc/bash_completion.d'
 
 if [[ -d "${bash_completion_d}" ]]; then
+  # shellcheck disable=SC2231
   for comp_script in ${bash_completion_d}/*; do
     if [[ -f "${comp_script}" ]]; then
       source "${comp_script}"

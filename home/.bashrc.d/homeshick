@@ -1,6 +1,6 @@
 export HOMESHICK_DIR="/usr/local"
 
-if which brew 2>&1 >/dev/null; then
+if which brew >/dev/null 2>&1; then
   homeshick_sh="$(brew --prefix homeshick)/homeshick.sh"
 
   if [[ -f "${homeshick_sh}" ]]; then

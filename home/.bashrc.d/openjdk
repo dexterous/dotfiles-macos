@@ -1,5 +1,5 @@
 if which brew >/dev/null 2>&1; then
-  if brew list openjdk >/dev/null 2>&1; then
+  if [ -d $(brew --cellar)/openjdk ]; then
     export PATH="$(brew --prefix openjdk)/bin:$PATH"
   fi
 fi

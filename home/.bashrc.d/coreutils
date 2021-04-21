@@ -1,0 +1,5 @@
+if which brew >/dev/null 2>&1; then
+  if [ -d $(brew --cellar)/coreutils ]; then
+    export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+  fi
+fi

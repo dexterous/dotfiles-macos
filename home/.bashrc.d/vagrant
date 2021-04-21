@@ -1,0 +1,3 @@
+if which vagrant >/dev/null 2>&1; then
+  source /opt/vagrant/embedded/gems/2.2.15/gems/vagrant-2.2.15/contrib/bash/completion.sh
+fi

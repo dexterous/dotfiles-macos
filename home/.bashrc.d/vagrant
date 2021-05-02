@@ -1,3 +1,4 @@
 if which vagrant >/dev/null 2>&1; then
-  source /opt/vagrant/embedded/gems/2.2.15/gems/vagrant-2.2.15/contrib/bash/completion.sh
+  vagrant_ver="$(vagrant --version | cut -d ' ' -f 2)"
+  source "/opt/vagrant/embedded/gems/${vagrant_ver}/gems/vagrant-${vagrant_ver}/contrib/bash/completion.sh"
 fi

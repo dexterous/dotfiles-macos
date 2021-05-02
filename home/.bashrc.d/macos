@@ -6,7 +6,7 @@
 
 defaults write com.apple.Dock orientation     -string left
 defaults write com.apple.Dock autohide        -bool   true
-defaults write com.apple.Dock autohide-delay  -float  1
+defaults write com.apple.Dock autohide-delay  -float  2
 defaults write com.apple.Dock magnification   -bool   false
 defaults write com.apple.Dock largesize       -float  16
 defaults write com.apple.Dock persistent-apps -array  "()"

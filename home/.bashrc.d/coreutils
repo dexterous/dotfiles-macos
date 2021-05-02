@@ -1,5 +1,7 @@
 if which brew >/dev/null 2>&1; then
-  if [ -d $(brew --cellar)/coreutils ]; then
-    export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-  fi
+  for formula in coreutils gnu-sed; do
+    if [ -d "$(brew --cellar)/${formula}" ]; then
+      export PATH="$(brew --prefix "${formula}")/libexec/gnubin:$PATH"
+    fi
+  done
 fi

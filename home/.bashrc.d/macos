@@ -1,0 +1,19 @@
+#!/bin/bash -eu
+
+
+# do we really want to kill-restart the Dock everytime we login?
+# TBF, since these are persistent configs, we only really need to set them once.
+
+defaults write com.apple.Dock orientation     -string left
+defaults write com.apple.Dock autohide        -bool   true
+defaults write com.apple.Dock autohide-delay  -float  1
+defaults write com.apple.Dock magnification   -bool   false
+defaults write com.apple.Dock largesize       -float  16
+defaults write com.apple.Dock persistent-apps -array  "()"
+defaults write com.apple.Dock show-recents    -bool   false
+
+#kill "$(pgrep -f /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock)"
+
+
+# Menubar
+# Trackpad sensitivity (com.apple.AppleMultitouchTrackpad)

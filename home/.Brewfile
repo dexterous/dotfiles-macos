@@ -22,6 +22,7 @@ brew "fzf"
 brew "git"
 brew "git-filter-repo"
 brew "gnu-sed"
+brew "go"
 brew "gradle"
 brew "gradle-completion", :args => ['ignore-dependencies']
 brew "groovy"

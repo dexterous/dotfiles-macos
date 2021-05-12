@@ -23,6 +23,7 @@ brew "git"
 brew "git-filter-repo"
 brew "gnu-sed"
 brew "gradle"
+brew "gradle-completion", :args => ['ignore-dependencies']
 brew "groovy"
 brew "hadolint"
 brew "helm"

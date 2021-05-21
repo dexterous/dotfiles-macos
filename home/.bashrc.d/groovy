@@ -1,5 +1,9 @@
+#!/bin/bash -eu
+
+
 if which brew >/dev/null 2>&1; then
-  if [ -d $(brew --cellar)/groovy ]; then
-    export GROOVY_HOME=/usr/local/opt/groovy/libexec
+  if [ -d "$(brew --cellar)/groovy" ]; then
+    GROOVY_HOME="$(brew --prefix groovy)/libexec"
+    export GROOVY_HOME
   fi
 fi

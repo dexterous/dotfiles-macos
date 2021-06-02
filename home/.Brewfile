@@ -25,6 +25,7 @@ brew "gnu-sed"
 brew "go"
 brew "gradle"
 brew "gradle-completion", :args => ['ignore-dependencies']
+brew "graphviz"
 brew "groovy"
 brew "hadolint"
 brew "helm"

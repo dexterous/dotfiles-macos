@@ -23,4 +23,8 @@ defaults write com.apple.Finder "QuitMenuItem" -bool "true"
 
 
 # Menubar
+
 # Trackpad sensitivity (com.apple.AppleMultitouchTrackpad)
+
+# Disable App quarantine popup
+defaults write com.apple.LaunchServices LSQuarantine -bool false

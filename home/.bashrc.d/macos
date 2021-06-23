@@ -1,6 +1,7 @@
 #!/bin/bash -eu
 
 
+# Configure Dock
 # do we really want to kill-restart the Dock everytime we login?
 # TBF, since these are persistent configs, we only really need to set them once.
 
@@ -11,6 +12,12 @@ defaults write com.apple.Dock magnification   -bool   false
 defaults write com.apple.Dock largesize       -float  16
 defaults write com.apple.Dock persistent-apps -array  "()"
 defaults write com.apple.Dock show-recents    -bool   false
+
+# Don't rearrange spaces
+defaults write com.apple.Dock mru-spaces -bool false
+
+# Allow quit Finder
+defaults write com.apple.Finder "QuitMenuItem" -bool "true"
 
 #kill "$(pgrep -f /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock)"
 

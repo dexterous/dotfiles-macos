@@ -14,3 +14,6 @@ fi
 # Key bindings
 # ------------
 source "/usr/local/opt/fzf/shell/key-bindings.bash"
+
+FZF_CTRL_T_OPTS="--preview='bat --color=always --style=numbers,grid --pager=never {}'"
+export FZF_CTRL_T_OPTS

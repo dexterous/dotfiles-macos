@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+
+if which brew >/dev/null 2>&1; then
+  if [ -d "$(brew --cellar)/ruby" ]; then
+    PATH="$(brew --prefix ruby)/bin:${PATH}"
+    export PATH
+  fi
+fi

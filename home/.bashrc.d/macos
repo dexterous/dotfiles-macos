@@ -32,3 +32,9 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Some folks are finding Big Sur's font smoothing too aggressive on external monitors.
 # To disable it you can open a Terminal window and type:
 defaults -currentHost write -g AppleFontSmoothing -int 0
+
+
+# Keychain
+
+# Keep aws-vault keychain open longer
+security set-keychain-settings -t 900s aws-vault.keychain-db

@@ -29,6 +29,10 @@ defaults write com.apple.Finder "QuitMenuItem" -bool "true"
 # Disable App quarantine popup
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
+# Setup Okta DSSO
+defaults write com.google.Chrome AuthServerWhitelist org.kerberos.okta.com
+defaults write com.google.Chrome AuthNegotiateDelegateWhitelist org.kerberos.okta.com
+
 # Some folks are finding Big Sur's font smoothing too aggressive on external monitors.
 # To disable it you can open a Terminal window and type:
 defaults -currentHost write -g AppleFontSmoothing -int 0

@@ -4,6 +4,6 @@
 # shellcheck source=/dev/null
 
 if which docker >/dev/null 2>&1; then
-  source "/Applications/Docker.app/Contents/Resources/etc/docker.bash-completion"
+  source "/Applications/Docker.app/Contents/Resources/etc/docker"
   source "/Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion"
 fi
